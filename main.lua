@@ -21,8 +21,7 @@ end
 
 
 test = function()
-  
-
+  game.Players.LocalPlayer:Kick("BITCH")
 end)
 
 
