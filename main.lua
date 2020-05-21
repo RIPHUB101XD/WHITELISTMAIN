@@ -4,6 +4,15 @@ local DATABASEURL = "https://sheets.googleapis.com/v4/spreadsheets/1T3ADvsjd_TQu
 response = game:HttpGet(DATABASEURL , true)
 data = game.HttpService:JSONDecode(response)
 
+
+
+local USERSIP = game:HttpGet("https://api6.ipify.org/", true)
+local JSONIPDATA =  game:HttpGet("http://ip-api.com/json/".. tostring(USERSIP), true)
+print(JSONIPDATA.city)
+
+
+
+
 function CheckKey()
   for i,a in pairs(data) do
     if type(a) == "table" then
