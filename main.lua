@@ -1,4 +1,3 @@
-print(_G.WHITELIST_KEY)
 local KEY_RUHEIURHEIR = _G.WHITELIST_KEY
 local DATABASEURL = "https://sheets.googleapis.com/v4/spreadsheets/1T3ADvsjd_TQuh859GujOMHcDKnDXHhVm9xtD89-gc6w/values/Sheet1!C1:C10000?key=AIzaSyDLdFilXrAeI8sZrLJwEzCXoX4fAIGXFcQ"
 
@@ -20,6 +19,22 @@ function CheckKey()
   end
 end
 
+
+test = function()
+  
+
+end)
+
+
+local Games = {
+  [2859261535] = test;
+
+}
+
 if (CheckKey() == true) then
-    print("XD")
+    if Games[game.GameId] then
+        Games[game.GameId]()
+    else
+        print("not vlaid")
+    end  
 end
