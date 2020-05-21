@@ -25,14 +25,10 @@ test = function()
 end)
 
 
-local Games = {
-  [2859261535] = test;
-
-}
 
 if (CheckKey() == true) then
-    if Games[game.GameId] then
-        Games[game.GameId]()
+    if game.GameId == 2859261535 then
+        test()
     else
         print("not vlaid")
     end  
