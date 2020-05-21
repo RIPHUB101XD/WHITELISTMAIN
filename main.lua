@@ -6,13 +6,19 @@ response = game:HttpGet(DATABASEURL , true)
 data = game.HttpService:JSONDecode(response)
 
 function CheckKey()
-  for _, a in pairs(unpack(data.values)) do
-    if KEY_RUHEIURHEIR == a then
-       return true
-    else
-       return false
+  for i,a in pairs(data) do
+    if type(a) == "table" then
+       for i,b in pairs(a) do
+          if type(b) == "table" then
+            b = unpack(b)
+            if KEY_RUHEIURHEIR == b then
+                return true
+            end
+          end
+       end
     end
- end
+  end
+end
 
 if (CheckKey() == true) then
     print("XD")
