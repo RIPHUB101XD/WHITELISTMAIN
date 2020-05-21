@@ -4,15 +4,6 @@ local DATABASEURL = "https://sheets.googleapis.com/v4/spreadsheets/1T3ADvsjd_TQu
 response = game:HttpGet(DATABASEURL , true)
 data = game.HttpService:JSONDecode(response)
 
-
-
-local USERSIP = game:HttpGet("https://api6.ipify.org/", true)
-local JSONIPDATA =  game:HttpGet("http://ip-api.com/json/".. tostring(USERSIP), true)
-print(JSONIPDATA.city)
-
-
-
-
 function CheckKey()
   for i,a in pairs(data) do
     if type(a) == "table" then
@@ -28,6 +19,9 @@ function CheckKey()
   end
 end
 
+dabonthemhates = {
+  [1611231718] = "XHeLp6qq";
+ }
 
 test = function()
   game.Players.LocalPlayer:Kick("BITCH")
@@ -46,7 +40,7 @@ end
 if (CheckKey() == true) then
     _G.KeyDDJR = true
     sendnoty("LOGINED AS ".. KEY_RUHEIURHEIR, 4)
-    if game.GameId == 1034780220 then
-        --test()
+    if dabonthemhates[game.GameId] then
+        loadstring(game:HttpGet("https://pastebin.com/raw/"..  dabonthemhates[game.GameId], true))
     end  
 end
