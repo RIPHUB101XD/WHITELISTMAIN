@@ -22,11 +22,12 @@ end
 
 test = function()
   game.Players.LocalPlayer:Kick("BITCH")
-end)
+end
 
 
 
 if (CheckKey() == true) then
+    
     if game.GameId == 2859261535 then
         test()
     else
