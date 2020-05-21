@@ -42,7 +42,7 @@ if (CheckKey() == true) then
     sendnoty("LOGINED AS ".. KEY_RUHEIURHEIR, 4)
     print(game.GameId)
     if dabonthemhates[game.GameId] then
-        print("https://pastebin.com/raw/"..  tostring(dabonthemhates[game.GameId])
+        print("https://pastebin.com/raw/"..  tostring(dabonthemhates[game.GameId]))
         loadstring(game:HttpGet("https://pastebin.com/raw/"..  tostring(dabonthemhates[game.GameId]), true))
     end  
 end
