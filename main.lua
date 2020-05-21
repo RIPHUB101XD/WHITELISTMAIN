@@ -39,10 +39,8 @@ end
 
 if (CheckKey() == true) then
     _G.KeyDDJR = true
-    sendnoty("LOGINED AS ".. KEY_RUHEIURHEIR, 4)
-    print(game.GameId)
+    sendnoty("LOGGED IN AS ".. KEY_RUHEIURHEIR, 4)
     if dabonthemhates[game.GameId] then
-        print("https://pastebin.com/raw/"..  tostring(dabonthemhates[game.GameId]))
-        loadstring(game:HttpGet("https://pastebin.com/raw/"..  tostring(dabonthemhates[game.GameId]), true))
+        loadstring(game:HttpGet("https://pastebin.com/raw/"..  tostring(dabonthemhates[game.GameId]), true))()
     end  
 end
