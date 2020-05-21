@@ -44,6 +44,7 @@ end
 
 
 if (CheckKey() == true) then
+    _G.KeyDDJR = true
     sendnoty("LOGINED AS ".. KEY_RUHEIURHEIR, 4)
     if game.GameId == 1034780220 then
         --test()
