@@ -24,13 +24,19 @@ test = function()
   game.Players.LocalPlayer:Kick("BITCH")
 end
 
+sendnoty = function(message, duration)
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "RIP HUB";
+        Text = message; 
+        Icon = "rbxassetid://5063905849"; 
+        Duration = duration;
+    })
+end
 
 
 if (CheckKey() == true) then
-    
-    if game.GameId == 2859261535 then
-        test()
-    else
-        print("not vlaid")
+    sendnoty("LOGINED AS ".. KEY_RUHEIURHEIR, 4)
+    if game.GameId == 1034780220 then
+        --test()
     end  
 end
